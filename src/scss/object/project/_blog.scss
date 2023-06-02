@@ -1,0 +1,128 @@
+.main-dolor{
+  padding:50px 0px;
+  h2{
+    margin-bottom:10px;
+    text-align:center;
+    position:relative;
+    @include fontLato(300);
+  }
+  p{
+    @include fontPoppins(400);
+  }
+}
+.main-dolor__para{
+  @include fontPoppins(400);
+  padding:0px 100px;
+  line-height:30px;
+  text-align:center;
+}
+.main-dolor__card{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+}
+.dolor-card{
+  width:369px;
+  height:372px;
+  background:white;
+  margin-bottom:25px;
+  text-align:center;
+  box-shadow:0px 0px 6px rgba(0,0,0,1);
+  padding:50px 20px;
+  box-sizing:border-box;
+  span{
+    display:inline-block;
+    width:50px;
+    height:50px;
+    background:blue;
+    border-radius:100%;
+    text-align:center;
+    margin-bottom:20px;
+    position:relative;
+  }
+  h4{
+    margin-bottom:15px;
+    @include fontLato(400);
+  }
+  p{
+    line-height:30px;
+    @include fontPoppins(300);
+  }
+}
+.dolor-card span .anim-icon1{
+  position:absolute;
+  top:15px;
+  // bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:1;
+  opacity:1;
+  color:white;
+}
+.dolor-card span:hover .anim-icon1{
+  opacity:0;
+  z-index:-1;
+}
+.dolor-card span:hover .anim-icon{
+  z-index:2;
+}
+
+.main-dolor__tit{
+  width:770px;
+  margin:0 auto;
+  padding:50px 0px;
+}
+
+.main-blog {
+  display: flex;
+  align-items: center;
+  box-sizing:border-box;
+  &__txt {
+      width: 50%;
+      display:flex;
+      flex-wrap:wrap;
+      text-align:left;
+      padding-left:100px;
+      &--text {
+      }
+      h1{
+        @include fontLato(300);
+        font-size:50px;
+      }
+      p {
+        @include fontPoppins(400);
+          padding-bottom: 50px;
+          font-size: 16px;
+          opacity: 0.5;
+      }
+  }
+  &__img {
+      width: 50%;
+      height: 601px;
+      overflow: hidden;
+      object-fit: cover;
+      object-position: center;
+      img {
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          transition: 1s;
+      }
+  }
+}
+
+
+.main-blog:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.anim-icon{
+  position:absolute;
+  top:15px;
+  left:0;
+  right:0;
+  margin:auto;
+  z-index:-1;
+  color:white;
+}

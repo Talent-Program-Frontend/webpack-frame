@@ -1,0 +1,16 @@
+.nav-menu{
+  
+  ul{
+    display:flex;
+    justify-content: center;
+   
+    li{
+      padding-left:50px;
+      a{  
+        color: #D9F0FF;
+        font-size: 12px;
+        @include fontPoppins(500);
+      }
+    }
+  }    
+}

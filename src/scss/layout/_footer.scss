@@ -1,0 +1,11 @@
+footer{
+  address{
+      background-color: #325DFF;
+      opacity: 1;
+      text-align: center;
+      padding: 40px 0px;
+      @include fontPoppins(400);
+      font-weight: 20px;
+      
+  }
+}

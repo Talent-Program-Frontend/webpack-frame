@@ -1,0 +1,22 @@
+.c-btn {
+  text-align: center;
+  a {
+      display:inline-block;
+      font-family: Lato;
+      font-weight: bold;
+      text-decoration: none;
+      color: antiquewhite;
+      padding: 20px 35px;
+      background-color: #1e4eea;
+      border-radius: 30px;
+      font-size: small;
+      letter-spacing: 4.2px;
+      transition:all 1s;
+      @include fontLato(700);
+  }
+}
+.c-btn:hover a{
+      color:blue;
+      background:rgb(163, 126, 126);
+      transition:all 1s;
+}
