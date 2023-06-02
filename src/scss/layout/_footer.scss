@@ -1,0 +1,29 @@
+@charset "utf-8";
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+
+  a {
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    padding: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+}

@@ -5,18 +5,54 @@
 /* ==========================================================================
   Foundation
 ========================================================================== */
+@import 'foundation/base';
 
 /* ==========================================================================
-  Foundation
+  Layout
 ========================================================================== */
+@import 'layout/layout';
+@import 'layout/header';
+@import 'layout/footer';
 
 /* ==========================================================================
   Project
 ========================================================================== */
+@import 'object/project/page-faq';
 
 /* ==========================================================================
   Component
 ========================================================================== */
-h1 {
-  color: #f00;
+@import 'object/component/nav-menu';
+@import 'object/component/card';
+@import 'object/component/form';
+
+body {
+  // background-image: url(../img/ace.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-attachment: fixed;
+  background: url(../img/ace.jpg) no-repeat center;
+}
+
+.p-typography {
+  margin: 20px;
+
+  &__inner {
+    height: 50vh;
+    background: rgba(181, 231, 173, .5);
+    font-family: 'Roboto', 'Hiragino Kaku Gothic Pro', 'ヒラギノ角ゴ Pro W3', 'メイリオ', Meiryo, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    color: #f00;
+    letter-spacing: .1em;
+    line-height: 1.5;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    text-shadow: 2px 6px 10px rgb(240, 160, 41);
+    border: 1px solid rgb(96, 83, 83);
+    padding: 20px;
+  }
 }
