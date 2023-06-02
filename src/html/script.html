@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Javascript</title>
+</head>
+<body>
+  <h1>AcePlus Solutions</h1>
+  <div>
+    <h2>Title</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem dolorum magni neque culpa mollitia ipsa adipisci maiores dolor eaque vero recusandae doloribus, sed sunt illum at harum. Suscipit, quo.</p>
+  </div>
+  
+</body>
+<script>
+  // var scope variables
+  // function varScoping () {
+  //   var a = 1;
+  //   if(a == 1) {
+  //     var a = 2;
+  //     console.log('var result in condition ' + a);
+  //   }
+  //   console.log('var result is ' + a);
+  // }
+  // varScoping();
+
+  // let scope variables
+  // function letScoping() {
+  //   let a = 1;
+  //   if( a === 1) {
+  //     let a = 2;
+  //     console.log('let result in condition ' + a);
+  //   }
+  //   console.log('let result is ' + a);
+  // }
+
+  // letScoping();
+
+  // String Data Type Methods
+  let data = 'Aceplus Solutions Co';
+  console.log(data.charAt('4'));
+  console.log(data.concat(' Co.ltd'));
+  if(data.endsWith('d')) {
+    console.log('Data endwith is true');
+  } else {
+    console.log('Data endwith is false');
+  }
+
+  if (data.includes('c')) {
+    console.log('Include is true');
+  } else {
+    console.log('Include is false');
+  }
+
+  console.log(data.indexOf('So'));
+  console.log(data.lastIndexOf('ceplus'));
+  console.log(data.length);
+  console.log(data.replace('Aceplus', 'Hivelocity'));
+
+  console.log(data.slice(0,3));
+  console.log(data.split(" "));
+
+  let type = true;
+  console.log(type.toString(type));
+
+  // Number Data Type Methods
+  let num = 123456;
+  console.log(num.toExponential(3));
+  console.log(num.toFixed(3));
+  console.log(num.toPrecision(3));
+
+  // Boolean Data Type Methods
+  const JSisEasy = false;
+  if(JSisEasy) console.log('yes it')
+
+  const DemoBoolean = new Boolean();
+  if(DemoBoolean) console.log('it work');
+
+  // Undefined & Null
+  console.log(null == undefined);
+  console.log(null === undefined);
+
+  // Array Data Type
+  const myArray = ["HTML", "CSS", "JAVASCRIPT"]; [ 0, 1, 2];
+  console.log(myArray[1]);
+  console.log(myArray[3]);
+  myArray.push("SCSS");
+  console.log(myArray);
+  // myArray[5] = "TYPESCRIPT";
+  // console.log(myArray);
+ 
+  // console.log(myArray.shift()); 
+  // console.log(myArray.pop()); 
+  delete myArray[1];
+  console.log(myArray);
+
+  // Object Data Type
+  const obj = {
+    "name" : "Myat Chaw Su",
+    hello: () => {
+      return console.log('Object Function');
+    }
+  }
+
+  console.log(obj.name);
+  console.log(obj["name"]);
+  console.log(obj.hello());
+
+  // DOM Manipulation
+  let text = document.querySelector('div');
+  // text.innerText = 'Paragraph';
+  // text.innerHTML = '<h3> Sub Title </h3>';
+
+  let newNode = document.createElement('div');
+  newNode.classList.add('new');
+  newNode.innerHTML = '<p>hello new node</p>';
+  text.appendChild(newNode);
+  
+  document.querySelector('.new').remove();
+  
+</script>
+</html>
