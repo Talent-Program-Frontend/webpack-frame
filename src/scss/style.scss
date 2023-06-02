@@ -1,21 +1,22 @@
-@import "foundation/resets";
+/* normalize.css
+------------------------ */
+@import 'normalize.css/normalize.css';
 
-@import "layout/layout";
+/* ==========================================================================
+  Foundation
+========================================================================== */
 
-@import "foundation/font";
+/* ==========================================================================
+  Foundation
+========================================================================== */
 
-@import "layout/header";
+/* ==========================================================================
+  Project
+========================================================================== */
 
-@import "object/project/mainvisual";
-
-@import "object/component/menu";
-
-@import "object/project/video";
-
-@import "object/project/blog";
-
-@import "layout/footer";
-
-@import "object/component/c-btn";
-
-@import "object/project/feature";
+/* ==========================================================================
+  Component
+========================================================================== */
+h1 {
+  color: #f00;
+}
