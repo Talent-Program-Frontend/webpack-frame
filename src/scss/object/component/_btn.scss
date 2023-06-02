@@ -1,0 +1,42 @@
+/* btn
+------------------------ */
+.c-btn {
+  max-width: 196px;
+
+  a {
+    display: block;
+    width: 100%;
+    background-color: $btnColor;
+    color: #000;
+    @include fontMuli(700);
+    font-size: 16px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 100%;
+      background-color: #e89400;
+      background-image: url(../img/btn_icon.png);
+      background-size: 24px 24px;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      right: 0;
+    }
+
+    &:hover {
+      opacity: .8;
+    }
+
+    span {
+      width: calc(100% - 50px);
+      display: block;
+      text-align: center;
+    }
+  }
+}

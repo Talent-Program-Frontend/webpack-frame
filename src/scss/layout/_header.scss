@@ -1,0 +1,25 @@
+/* Header
+------------------------ */
+header {
+  border-bottom: 1px solid #93a0a7;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+}
+
+.l-header {
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    padding-left: 20px;
+
+    a {
+      @include fontPoppins(600);
+      font-size: 22px;
+      color: $baseColor;
+    }
+  }
+}

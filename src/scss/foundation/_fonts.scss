@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@600&display=swap');
+/* fonts
+------------------------ */
+@mixin fontPlayfair($weight) {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin fontMuli($weight) {
+  font-family: 'Muli', sans-serif;
+  font-weight: $weight;
+}
+
+@mixin fontPoppins($weight) {
+  font-family: 'Poppins', sans-serif;
+  font-weight: $weight;
+}
+
+

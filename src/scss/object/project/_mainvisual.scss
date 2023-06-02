@@ -1,0 +1,40 @@
+/* mainvisual
+------------------------ */
+.p-mainvisual {
+  padding-top: 87px;
+
+  &__txt {
+    display: flex;
+    align-items: center;
+    width: 635px;
+    height: 800px;
+
+    h2 {
+      @include fontPlayfair(600)
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: 'Muli', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      padding-left: 50px;
+      position: relative;
+      margin-bottom: 30px;
+
+      &:before {
+        content: '';
+        display: inline-flex;
+        align-items: center;
+        border: 1.5px;
+        width: 40px;
+        height: 1.5px;
+        background-color: $baseColor;
+        position: absolute;
+        top: 50%;
+        left: 0;
+      }
+    }
+  }
+}
