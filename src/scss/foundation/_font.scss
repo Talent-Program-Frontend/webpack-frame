@@ -1,0 +1,35 @@
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@600&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@100&display=swap');
+
+// @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;1,300&family=Playfair+Display:wght@400;700&family=Poppins:wght@100&display=swap');
+// @mixin fontPlayfair($weight) {
+//   font-family: 'Playfair Display', sans-serif;
+//   font-weight: $weight;
+// }
+
+// @mixin fontMuli($weight) {
+//   font-family: 'Muli', sans-serif;
+//    font-weight: $weight;
+// }
+
+// @mixin fontPoppins($weight) {
+//   font-family: 'Poppins', sans-serif;
+//   font-weight: $weight;
+// }
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@500;700&family=Fascinate&family=Lato:ital,wght@0,400;0,700;1,300&family=Noto+Serif+Myanmar:wght@800&family=Poppins:wght@300;400;500&display=swap');
+
+
+@mixin fontDancing($weight) {
+     font-family: 'Dancing Script', sans-serif;
+     font-weight: $weight;
+}
+
+@mixin fontPoppins($weight){
+   font-family:'Poppins',sans-serif;
+   font-weight:$weight;
+}
+
+@mixin fontLato($weight){
+   font-family:'Lato',sans-serif;
+   font-weight:$weight;
+}

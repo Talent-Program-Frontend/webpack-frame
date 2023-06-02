@@ -1,0 +1,21 @@
+.main-feature {
+  text-align: center;
+  &__txt{
+    padding:70px;
+    width:600px;
+    margin:0 auto;
+    p {
+      
+      opacity: 0.65;
+      @include fontPoppins(400);
+      font-size:16px;
+  }
+  }
+}
+
+h1 {
+  @include fontLato(300);
+  font-size: 35px;
+  font-weight: normal;
+  margin-bottom:20px;
+}
