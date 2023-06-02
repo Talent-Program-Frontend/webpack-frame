@@ -15,6 +15,6 @@ Live Server
 ### 2. Run script
 
 ```bash
-$ yarn install or npm install
+$ npm install --force
 $ yarn start
 ```
