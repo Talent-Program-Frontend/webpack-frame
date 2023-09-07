@@ -32,41 +32,31 @@ const reqFields = document.querySelectorAll('[data-require]');
 
 form.addEventListener('submit', e => {
   let flag = true;
-  // reqFields.forEach((item, i) => {
-  //   if(item.value === '') {
-  //     flag = false;
-  //     let err = item.parentNode.querySelector('.error')
-  //     err.style.display = 'block'
-  //     err.innerText = errorTxt[item.getAttribute('name')];
-  //   }
-  // })
-
-  for(let i= 0; i < reqFields.length; i++) {
-    let err = reqFields[i].parentNode.querySelector('.error');
-    if(reqFields[i].value === '') {
+  reqFields.forEach((item, i) => {
+    let err = item.parentNode.querySelector('.error')
+    if(item.value === '') {
       flag = false;
-      err.style.display = 'block';
-      err.innerText = errorTxt[reqFields[i].getAttribute('name')] + ' is Required.';
+      err.style.display = 'block'
+      err.innerText = errorTxt[item.getAttribute('name')] + ' is Required.';
     } else {
-      err.style.display = 'none';
-    }
-  }
+      err.innerText = '';
+      flag = false;
+      if(password.value !== confirmPassword.value) {
+        confirmPassword.parentNode.querySelector('.error').innerText = 'Not Same Password';
+        password.parentNode.querySelector('.error').style.display = 'none';
+        confirmPassword.parentNode.querySelector('.error').style.display = 'block';
 
-  if(password.value !== confirmPassword.value) {
-      confirmPassword.parentNode.querySelector('.error').innerText = 'Not Same Password';
-      password.parentNode.querySelector('.error').style.display = 'none';
-      confirmPassword.parentNode.querySelector('.error').style.display = 'block';
-
-      if(confirmPassword.value === '') {
-        confirmPassword.parentNode.querySelector('.error').innerText = 'Confirm Password is Required.';
+        if(confirmPassword.value === '') {
+          confirmPassword.parentNode.querySelector('.error').innerText = 'Confirm Password is Required.';
+        }
+      } else if (password.value === confirmPassword.value) {
+        flag = true;
       }
-    } else if (confirmPassword.value !== '') {
-      confirmPassword.parentNode.querySelector('.error').style.display = 'none';
     }
-
+  })
+  
   flag ? document.querySelector('.success').style.display = 'block' : e.preventDefault()
-
-  //  if(!flag) {
-  //   e.preventDefault()
-  // }
+  if(!flag) {
+    e.preventDefault()
+  }
 });
