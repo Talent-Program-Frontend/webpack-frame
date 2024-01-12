@@ -1,0 +1,54 @@
+/* FAQ
+------------------------ */
+.p-faq {
+  &__list {
+    font-weight: normal;
+    font-size: 22px;
+    margin-bottom: 10px;
+
+    h1 {
+      font-weight: normal;
+      font-size: 22px;
+      background-color: #ff83b8;
+      padding: 20px;
+
+      a {
+        display: block;
+        width: 100%;
+        color: #fff;
+        position: relative;
+
+        &:after {
+          content: '+';
+          position: absolute;
+          right: 20px;
+        }
+      }
+    }
+  }
+
+  &__answer {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease;
+    height: 0;
+
+    &.show {
+      visibility: visible;
+      opacity: 1;
+      padding: 20px;
+      font-size: 14px;
+      height: auto;;
+    }
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .p-faq {
+    &__list {
+      h1 {
+        font-size: 18px;
+      }
+    }
+  }
+}
